@@ -10,10 +10,11 @@ footer {
 header {
   background-color: #222;
   padding: 15px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 header h1 {
@@ -31,6 +32,7 @@ header nav {
 header nav a {
   margin-right: 1.3em;
   font-size: 1.5em;
+  white-space: nowrap;
 }
 
 header h1,
@@ -81,9 +83,10 @@ main .techs .cards-container {
 }
 
 main .techs .cards-container .card {
-  width: 120px;
-  height: 120px;
+  width: 15vw;
+  height: 15vw;
   padding: 10px;
+  max-width: 120px;
   background-color: #eee;
   border-radius: 8px;
   margin-right: 1.8em;
@@ -123,6 +126,9 @@ main figure img {
 
 main figure img:hover {
   box-shadow: 0px 0px 6px #00e0ff;
+  width: 40vw; /* Adaptação para telas menores */
+  height: 40vw; /* Adaptação para telas menores */
+  max-width: 400px; /* Adiciona uma largura máxima para a imagem */
 }
 
 * {
