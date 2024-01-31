@@ -5,6 +5,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 header {
   background-color: #222;
@@ -13,12 +14,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 header h1 {
   font-size: 2.8em;
   font-weight: 200;
   cursor: pointer;
+
 }
 
 header nav {
@@ -112,10 +115,7 @@ main figure {
 }
 
 main figure img {
-  width: 400px;
-  height: 400px;
-  border-radius: 200px;
-
+  border-radius: 400px;
   margin-bottom: 6%;
   border: 1px #00e0ff solid;
   transition: 0.2s ease-in-out;
@@ -186,46 +186,5 @@ a:hover {
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 600px) {
-  header {
-    padding: 15px;
-  }
 
-  header h1 {
-    font-size: 2em;
-  }
 
-  header nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header nav a {
-    margin: 0.5em 0;
-  }
-
-  main {
-    padding: 10%;
-  }
-
-  main .main-content h2 {
-    font-size: 1.8em;
-  }
-
-  main .main-content .text p {
-    width: 100%;
-  }
-
-  main .techs .cards-container .card {
-    width: 15vw; /* Adaptação para telas menores */
-    height: 15vw; /* Adaptação para telas menores */
-    margin-right: 1em;
-  }
-
-  main figure img {
-    width: 40vw; /* Adaptação para telas menores */
-    height: 40vw; /* Adaptação para telas menores */
-    border-radius: 50%;
-    margin-bottom: 3%;
-  }
-}
