@@ -1,0 +1,242 @@
+footer {
+  background-color: #222;
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+header {
+  background-color: #222;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header h1 {
+  font-size: 2.8em;
+  font-weight: 200;
+  cursor: pointer;
+
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  margin-right: 1.3em;
+  font-size: 1.5em;
+  white-space: nowrap;
+}
+
+header h1,
+a {
+  color: #00e0ff;
+  transition: 0.2s ease-in-out;
+}
+
+header h1:hover,
+a:hover {
+  color: #fff;
+}
+main {
+  padding: 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* main content */
+
+main .main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-content h2 {
+  margin-bottom: 2%;
+  font-size: 2.2em;
+}
+
+main .main-content .text {
+  margin-bottom: 10%;
+}
+
+main .main-content .text p {
+  width: 75%;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* CARDS */
+
+main .techs .cards-container {
+  align-items: center;
+  display: flex;
+}
+
+main .techs .cards-container .card {
+  width: 15vw;
+  height: 15vw;
+  padding: 10px;
+  max-width: 120px;
+  background-color: #eee;
+  border-radius: 8px;
+  margin-right: 1.8em;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+main .techs .cards-container .card img {
+  width: 80%;
+}
+
+main .techs .cards-container .card:hover {
+  box-shadow: 0px 0px 8px #00e0ff;
+}
+
+/*foto */
+
+main figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main figure img {
+  border-radius: 400px;
+  margin-bottom: 6%;
+  border: 1px #00e0ff solid;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+main figure img:hover {
+  box-shadow: 0px 0px 6px #00e0ff;
+  width: 40vw; /* Adaptação para telas menores */
+  height: 40vw; /* Adaptação para telas menores */
+  max-width: 400px; /* Adiciona uma largura máxima para a imagem */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container-fora {
+  width: 100%;
+  background-color: #222;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 300;
+  font-size: 2vw; /* Adaptação para telas menores */
+  font-family: roboto;
+  position: static;
+  padding-top: 1.5vh; /* Adaptação para telas menores */
+}
+a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+.zoom {
+  width: 45%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  width: 45%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 15px;
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav a {
+    margin: 0.5em 0;
+  }
+
+  main {
+    padding: 10%;
+  }
+
+  main .main-content h2 {
+    font-size: 1.8em;
+  }
+
+  main .main-content .text p {
+    width: 100%;
+  }
+
+  main .techs .cards-container .card {
+    width: 15vw; /* Adaptação para telas menores */
+    height: 15vw; /* Adaptação para telas menores */
+    margin-right: 1em;
+  }
+
+  main figure img {
+    width: 40vw; /* Adaptação para telas menores */
+    height: 40vw; /* Adaptação para telas menores */
+    border-radius: 50%;
+    margin-bottom: 3%;
+  }
+}
+section {
+  font-size: 100%;
+}
+
+
+
