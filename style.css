@@ -6,6 +6,7 @@ body {
   background-color: #333;
   color: #fff;
   justify-content: space-between;
+  align-items: center;
   
 }
 header {
@@ -35,14 +36,14 @@ header nav {
 }
 
 header nav a {
-  margin-right: 1.3em;
+  margin-right: 0.6em;
   font-size: 1.5em;
   white-space: nowrap;
 }
 
 header h1,
 a {
-  color: red;
+  color: greenyellow;
   transition: 0.2s ease-in-out;
 }
 
@@ -128,7 +129,7 @@ strong {
 }
 
 .foto {
-  width: 13%;
+  width: 15%;
 
   border-radius: 70%;
   margin-left: 44%;
